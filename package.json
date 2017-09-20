@@ -1,0 +1,31 @@
+{
+  "name": "qonto",
+  "version": "1.0.0",
+  "description": "A simple Qonto API Client",
+  "main": "qonto.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "fishingrod": "^3.7.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bottomatik/qonto-api.git"
+  },
+  "keywords": [
+    "qonto",
+    "api",
+    "banking"
+  ],
+  "author": "Jo Colina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bottomatik/qonto-api/issues"
+  },
+  "homepage": "https://github.com/bottomatik/qonto-api#readme"
+}
