@@ -1,6 +1,6 @@
 # Qonto API Client
 A simple client for Qonto's API written in Node JS (ES6)
-Official docs are found [here](https://api-doc.qonto.eu/1.0/);
+Official docs are found [here](https://api-doc.qonto.eu/2.0/);
 
 ## Installation
 To install simply use npm or clone repo:
