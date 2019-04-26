@@ -1,6 +1,6 @@
 # Qonto API Client
 A simple client for Qonto's API written in Node JS (ES6)
-Official docs are found [here](https://api-doc.qonto.eu/1.0/);
+Official docs are found [here](https://api-doc.qonto.eu/2.0/);
 
 ## Installation
 To install simply use npm or clone repo:
@@ -30,13 +30,43 @@ This enables you to create multiple clients for different accounts.
 
 ## API
 
-This client uses the same API as Qonto docs, and provides it as a Promise-based client. It uses [fishingrod]() to perform requests,
+This client uses the version 2 of Qonto's API, and provides it as a Promise-based client. It uses [fishingrod]() to perform requests,
 and returns a Promise with the exact (non-treated) response from Qonto.
+
+### Attachments
+
+```javascript
+QontoClient.attachment('attachment_id').then(res => {
+	console.log(res.response);
+}).catch(e => {
+	console.error(e);
+});
+```
+
+### Labels
+
+```javascript
+QontoClient.labels([current_page=0], [per_page=100]).then(res => {
+	console.log(res.response);
+}).catch(e => {
+	console.error(e);
+});
+```
+
+### Memberships
+
+```javascript
+QontoClient.memberships([current_page=0], [per_page=100]).then(res => {
+	console.log(res.response);
+}).catch(e => {
+	console.error(e);
+});
+```
 
 ### Organization
 
 ```javascript
-QontoClient.organization().then(res => {
+QontoClient.organization('slug_for_organization').then(res => {
 	console.log(res.response);
 }).catch(e => {
 	console.error(e);
